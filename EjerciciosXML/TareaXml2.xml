@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <equiposfutbol>
+        <equipo>
+            <nombre>Real Madrid</nombre>
+            <copas>13 copas de Europa</copas>
+        </equipo>
+        <equipo>
+            <nombre>Barcelona</nombre>
+            <copas>45 copas de Europa</copas>
+        </equipo>
+        
+
+    </equiposfutbol>

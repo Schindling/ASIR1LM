@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <marcadorespaginasweb>
+        <pagina>
+            <nombre>Xataka<nombre>
+            <url>https://www.xataka.com/</url>
+            <descripcion>Sitio web sobre noticias de tecnologia, informatica, ciencia, etc.</descripcion>
+        </pagina>
+        <pagina>
+            <nombre>Wikipedia</nombre>
+            <url>https://www.wikipedia.org/</url>
+            <descripcion>Sitio web que es una enciclopedia multilenguaje muy famosa, fuente decente de informacion </descripcion>
+        
+        <pagina>
+            <nombre>Uniwebsidad</nombre>
+            <url>https://uniwebsidad.com/</url>
+            <descripcion>Sitio web gratuito donde aprender sobre herramientas de desarrollo web</descripcion>
+        </pagina>
+    </marcadorespaginasweb
