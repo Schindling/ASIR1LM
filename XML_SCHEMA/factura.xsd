@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="factura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="datos-emisor">
+         <xs:complexType>
+          <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="cif" type="xs:string"/>
+            <xs:element name="teléfono" type="xs:string"/>
+          </xs:sequence>
+         </xs:complexType> 
+        </xs:element>
+        <xs:element name="datos-cliente">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="cif" type="xs:string"/>
+              <xs:element name="teléfono" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="detalle-factura">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="línea">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="descripción" type="xs:string"/>
+                    <xs:element name="cantidad" type="xs:integer"/>
+                    <xs:element name="oferta"/>
+                    <xs:element name="pvp" type="xs:decimal"/>
+                  </xs:sequence>
+                  <xs:attribute name="código-artículo" type="xs:string" use="required"></xs:attribute>
+                  <xs:attribute name="tipo" type="xs:string" use="required"></xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="importe" type="xs:decimal" use="required"></xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="número" type="xs:integer" use="required"></xs:attribute>
+      <xs:attribute name="fecha" type="xs:date" use="required"></xs:attribute>
+      <xs:attribute name="moneda" type="xs:string" use="required"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
