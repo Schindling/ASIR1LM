@@ -1,0 +1,29 @@
+1)
+
+a)/tutoriales/tutorial
+b)//tutorial
+
+2) 
+
+a)/tutoriales/tutorial/categoria
+b)//categoria
+
+3) count(//tutorial)
+
+4) //@anio
+
+5)//autor/nombre[string-length(text()) < 9]
+
+6) //tutorial[number(@anio) > 2012]/@anio
+
+7) /tutoriales/tutorial/categoria[contains(text(),'Spring')]
+
+8) //tutorial[number(@anio) = 2011]
+
+9)//tutorial[2]
+
+10) (//tutorial)[last()-1]
+
+11) //tutorial[contains(titulo, "Spring")]
+
+12) //tutorial[autor[nombre[text()="Alejandro"]]]
