@@ -1,0 +1,47 @@
+1) for $lascategorias in /tutoriales/tutorial/categoria return $lascategorias
+
+2) for $general in /tutoriales/tutorial
+return <lostutoriales>{$general/titulo/text()," (",$general/visitas/text(),")"}</lostutoriales>
+
+3) for $comparar at $e in /tutoriales/tutorial
+return <peortitulo> {if ($comparar/visitas<2000) then(
+    $comparar/titulo/text()
+ )else(
+   
+ )
+}
+  
+</peortitulo>
+
+4)for $masvisitado in /tutoriales/tutorial
+return  if ($masvisitado/visitas>30000) then ($masvisitado/titulo) else () 
+
+5) let $sumatoria:=/tutoriales/tutorial
+return <total> {sum($sumatoria/visitas)}</total>
+
+6) for $categorias in distinct-values (/tutoriales/tutorial/categoria)
+return <categoriasdistintas>{$categorias}</categoriasdistintas>
+
+7) for $AutorNA in distinct-values (/tutoriales/tutorial/autor)
+let $Titulo :=/tutoriales/tutorial[autor=$AutorNA]/titulo
+order by $AutorNA
+return <autores><nombreyapellidos>{$AutorNA}</nombreyapellidos>{$Titulo}</autores>
+
+8)let $visitas:= /tutoriales/tutorial/visitas
+return <media> {avg($visitas)}</media>
+
+9)for $tutoriales in /tutoriales
+return <totaltutoriales>{count($tutoriales/tutorial)}</totaltutoriales>
+
+10)for $tutorial in /tutoriales/tutorial
+order by $tutorial/categoria
+return <tutorial>
+{$tutorial/categoria}
+{$tutorial/titulo}
+</tutorial>
+
+11)for $tutorial in /tutoriales/tutorial
+return <tutorial>{$tutorial/* except $tutorial/visitas}</tutorial>
+
+12)for $tutorial in /tutoriales/tutorial
+return <table><tr><td>{$tutorial/titulo/text()}</td><td>{$tutorial/autor/text()}</td></tr></table>
