@@ -4,8 +4,8 @@
 |     Año 1      |    Año2       |
 |----------------|-------------- |
 |Html,           |Validacion,    |
-|XML, CSS        |Transformacion,|
-|                |Sindicacion de |
+|XML,            |Transformacion,|
+|CSS             |Sindicacion de |
 |                |contenidos     |
 
 
