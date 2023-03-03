@@ -1,6 +1,5 @@
 # XSLT
-## Ejercicio A
-## Ejercicio B
+## Ejercicio A y B
 
 **Autor**
 _Gabriel Alejandro Schindling Silva_
