@@ -3,8 +3,8 @@
 
 |     Año 1      |            Año2              |
 |----------------|------------------------------|
-|Html,           |Validacion de XML,            |
-|XML,            |Transformacion de XML,        |
+|Html            |Validacion de XML,            |
+|XML             |Transformacion de XML,        |
 |CSS             |Sindicacion de contenidos     |
 
 
